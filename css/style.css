@@ -79,7 +79,8 @@ img {
 }
 
 .main-video-and-wiki {
-    width: 50%;    
+    width: 50%;
+    margin-inline-start: 20px;    
 }
 
 .main-video {

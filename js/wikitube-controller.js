@@ -10,6 +10,14 @@ function onSearch() {
     elInput.value = '';
     if(!txt) return;
     
-    // searchYoutube(txt);
-    searchWiki(txt);
+    searchWiki(txt).then(renderWiki);
+    searchYoutube(txt).then(res => console.log('res', res));
+}
+
+function renderWiki(res) {
+    document.querySelector('.wiki-section').innerHTML = `
+        <h3>${res.title}</h3>
+        ${res.snippet}
+    `
+    console.log('res.snippet',res.snippet);
 }
