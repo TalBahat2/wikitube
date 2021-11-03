@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Wikitube</title>
+</head>
+<body onload="init()">
+    <header class="main-header main-layout flex space-between align-center">
+        <div class="logo">wikitube</div>
+        <section class="search-section flex">
+            <input type="text" name="search-input" class="search-input" placeholder="Search">
+            <div class="search-btn" onclick="onSearch()">search</div>
+        </section>
+    </header>
+    <main class="main-content main-layout flex space-between">
+        <ul class="videos-list clean-list flex direction-column space-between">
+            <li class="video1 flex align-center">
+                <img src="img/004.png" alt="" class="video-img">
+                <p class="title">video title here</p>
+            </li>
+            <li class="video2 flex align-center">
+                <img src="img/004.png" alt="" class="video-img">
+                <p class="title">video title here</p>
+            </li>
+            <li class="video3 flex align-center">
+                <img src="img/004.png" alt="" class="video-img">
+                <p class="title">video title here</p>
+            </li>
+            <li class="video4 flex align-center">
+                <img src="img/004.png" alt="" class="video-img">
+                <p class="title">video title here</p>
+            </li>
+            <li class="video5 flex align-center">
+                <img src="img/004.png" alt="" class="video-img">
+                <p class="title">video title here</p>
+            </li>
+        </ul>
+        <div class="main-video-and-wiki flex direction-column space-between">
+            <div class="main-video-container">main video</div>
+            <section class="wiki-section">wikipedia</section>
+        </div>
+    </main>
+
+    <script src="js/services/wikitube-service.js"></script>
+    <script src="js/wikitube-controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+/* ---------- BASIC ---------- */
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(255, 136, 0);
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+/* ---------- LAYOUT ---------- */
+
+.main-layout {
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+}
+
+/* ---------- COMPONENTS ---------- */
+
+/* main-header */
+
+.main-header .logo {
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+/* search section */
+
+.search-section .search-btn {
+    text-transform: capitalize;
+    background-color: whitesmoke;
+    border: 1px solid grey;
+    padding: 5px 10px;
+}
+
+.search-section .search-btn:hover {
+    cursor: pointer;
+}
+
+/* main-content */
+.main-content {
+    padding-top: 20px;
+    height: 90vh;
+}
+/* videos list */
+
+.videos-list {
+    width: 50%;
+}
+
+.videos-list img {
+    max-width: 25%;
+}
+
+.videos-list p {
+    margin-inline-start: 10px;
+}
+
+.videos-list > * {
+    background-color: #e15f2b61;
+    border: 1px solid #bbb6b6;
+}
+
+.videos-list > * :not(:first-child) {
+    padding: 20px 0;
+}
+
+.main-video-and-wiki {
+    width: 50%;    
+}
+
+.main-video {
+    height: 60%;
+}
+
+.wiki-section {
+    height: 40%;
+}
+
+/* ---------- HELPERS ---------- */
+
+/* flex */
+
+.flex {
+    display: flex;
+}
+
+.flex.space-between {
+    justify-content: space-between;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+.flex.direction-column {
+    flex-direction: column;
+}
+
+/* list helpers */
+
+.clean-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* ---------- BREAK POINTS ---------- */
+
+/* Mobile Only */
+
+/* Mobile */
+
+@media (max-width: 650px){
+
+}
