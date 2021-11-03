@@ -10,5 +10,6 @@ function onSearch() {
     elInput.value = '';
     if(!txt) return;
     
-    search(txt);
+    // searchYoutube(txt);
+    searchWiki(txt);
 }
